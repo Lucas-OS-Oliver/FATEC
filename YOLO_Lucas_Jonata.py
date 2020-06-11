@@ -3,7 +3,7 @@
 #LUCAS OLIVEIRA DE SOUZA  R.A.: 0791721002#
 #IMPORTANDO IMAGEM(ENS) DO COMPUTADOR#
 from google.colab import files
-uploaded = files.upload() 
+uploaded = files.upload()
 #IMPORTANDO BIBLIOTECAS#
 import cv2
 import numpy as np
@@ -12,37 +12,36 @@ from google.colab.patches import cv2_imshow
 imagem = []
 imagem.append("austin-distel-744oGeqpxPQ-unsplash.jpg")
 imagem.append("anastasia-zhenina-fPX0XHxzCxI-unsplash.jpg")
-imagem.append("austin-distel-EMPZ7yRZoGw-unsplash")
-imagem.append("austin-distel-Jn1csk3lWDA-unsplash")
-imagem.append("austin-distel-jpHw8ndwJ_Q-unsplash")
-imagem.append("bruno-cervera-4i_9a-d_Q3E-unsplash")
-imagem.append("chelsea-gates-faPPevPD0MQ-unsplash")
-imagem.append("eggbank-ueAYDXll_N8-unsplash")
-imagem.append("elle-hughes-ajTlDUwLuJk-unsplash")
-imagem.append("erik-mclean-g6YNrpOq1Gk-unsplash")
-imagem.append("eugene-zhyvchik-KUqJuDtrVkw-unsplash")
-imagem.append("eugene-zhyvchik-u1gE6lvbloc-unsplash")
-imagem.append("hiep-duong-cqspyPWxW_M-unsplash")
-imagem.append("ilyuza-mingazova-2qMldY33AMo-unsplash")
-imagem.append("isaac-quesada-1mvrY8osYkM-unsplash")
-imagem.append("joshua-koblin-4hUxLunmxPM-unsplash")
-imagem.append("lance-anderson-ixBBY-WuFRU-unsplash")
-imagem.append("li-lin-0-MHQAG9XoA-unsplash")
-imagem.append("marianna-berno-QK_ufggzGCk-unsplash")
-imagem.append("nathan-anderson-0wKpv3o8D1I-unsplash")
-imagem.append("neonbrand-AOJGuIJkoBc-unsplash")
-imagem.append("neonbrand-JW6r_0CPYec-unsplash")
-imagem.append("romain-b-Y0Mxn4xG4hA-unsplash")
-imagem.append("surface-C389V--ZZrQ-unsplash")
-imagem.append("surface-DQfIfnTuT3w-unsplash")
-imagem.append("surface-O9m5k3_-iAs-unsplash")
-imagem.append("thomas-de-luze-7xDfU-htISs-unsplash")
-imagem.append("tim-motivv-AJCil71FOrc-unsplash")
-imagem.append("tyler-nix-KFVsFjTTkBo-unsplash")
-imagem.append("waldemar-brandt-FjAwyE8DLPw-unsplash")
+imagem.append("austin-distel-EMPZ7yRZoGw-unsplash.jpg")
+imagem.append("austin-distel-Jn1csk3lWDA-unsplash.jpg")
+imagem.append("austin-distel-jpHw8ndwJ_Q-unsplash.jpg")
+imagem.append("bruno-cervera-4i_9a-d_Q3E-unsplash.jpg")
+imagem.append("chelsea-gates-faPPevPD0MQ-unsplash.jpg")
+imagem.append("eggbank-ueAYDXll_N8-unsplash.jpg")
+imagem.append("elle-hughes-ajTlDUwLuJk-unsplash.jpg")
+imagem.append("erik-mclean-g6YNrpOq1Gk-unsplash.jpg")
+imagem.append("eugene-zhyvchik-KUqJuDtrVkw-unsplash.jpg")
+imagem.append("eugene-zhyvchik-u1gE6lvbloc-unsplash.jpg")
+imagem.append("hiep-duong-cqspyPWxW_M-unsplash.jpg")
+imagem.append("ilyuza-mingazova-2qMldY33AMo-unsplash.jpg")
+imagem.append("isaac-quesada-1mvrY8osYkM-unsplash.jpg")
+imagem.append("joshua-koblin-4hUxLunmxPM-unsplash.jpg")
+imagem.append("lance-anderson-ixBBY-WuFRU-unsplash.jpg")
+imagem.append("li-lin-0-MHQAG9XoA-unsplash.jpg")
+imagem.append("marianna-berno-QK_ufggzGCk-unsplash.jpg")
+imagem.append("nathan-anderson-0wKpv3o8D1I-unsplash.jpg")
+imagem.append("neonbrand-AOJGuIJkoBc-unsplash.jpg")
+imagem.append("neonbrand-JW6r_0CPYec-unsplash.jpg")
+imagem.append("romain-b-Y0Mxn4xG4hA-unsplash.jpg")
+imagem.append("surface-C389V--ZZrQ-unsplash.jpg")
+imagem.append("surface-DQfIfnTuT3w-unsplash.jpg")
+imagem.append("surface-O9m5k3_-iAs-unsplash.jpg")
+imagem.append("thomas-de-luze-7xDfU-htISs-unsplash.jpg")
+imagem.append("tim-motivv-AJCil71FOrc-unsplash.jpg")
+imagem.append("tyler-nix-KFVsFjTTkBo-unsplash.jpg")
+imagem.append("waldemar-brandt-FjAwyE8DLPw-unsplash.jpg")
 escolha = int(input("Qual imagem deseja trabalhar? Escolha entre 0 e 29? "))
 foto = cv2.imread(imagem[escolha])
-print(imagem[escolha])
 cv2_imshow(foto)
 largura = foto.shape[1]
 altura = foto.shape[0]
@@ -70,8 +69,8 @@ def get_output_layers(net):
 def draw_bounding_box(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
     label = str(classes[class_id])
     color = COLORS[class_id]
-    cv2.rectangle(img, (x,y), (x_plus_w,y_plus_h), color, 2)
-    cv2.putText(img, label, (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
+    cv2.rectangle(img, (x,y), (x_plus_w,y_plus_h), color, 20)
+    cv2.putText(img, label, (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 5, color, 20)
 #EXECUTAR ATRAVÉS DA REDE#
 outs = net.forward(get_output_layers(net))
 #RODANDO
@@ -108,6 +107,6 @@ for i in indices:
     
     draw_bounding_box(foto, class_ids[i], confidences[i], round(x), round(y), round(x+w), round(y+h))
 #MOSTRAR IMAGEM COM DETECÇÃO#  
-cv2.imshow("object detection", foto)
+cv2_imshow(foto)
 #LIBERA OS RECURSOS#
 cv2.destroyAllWindows()
