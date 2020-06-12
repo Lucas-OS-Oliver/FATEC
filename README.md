@@ -1,4 +1,4 @@
-# FATEC - Projeto Identificador de Objetos com YOLO + OpenCV
+<h1 align="justify"><img src="https://lh3.googleusercontent.com/proxy/cUvtzgrkT1ONaD6hehBCCw2_FwhpNzL1LBA3GltImycGX3wBD2pLkz36MmM5vcdpBlaJlkikfVIH9uYXMTBkLog9mSLgVBoL9sjEJFghIWyp2RQA" width=115> - Projeto Identificador de Objetos com YOLO + OpenCV</h1>
 Trabalho feito para a disciplina de Robótica Industrial, orientado pelo professor Me. Murilo Zanini de Carvalho.
 
 ### Descrição do projeto
