@@ -2,7 +2,11 @@
 Trabalho feito para a disciplina de Robótica Industrial, orientado pelo professor Me. Murilo Zanini de Carvalho.
 
 ### Descrição do projeto
-Projeto de identificador de objetos utilizando YOLO com OpenCV. 
+Projeto de identificador de objetos utilizando YOLO com OpenCV. Para a configuração efetiva do script, são necessários 4 parâmetros serem carregados em arquivos nas linhas de código:
+  - input da imagem: as 30 imagens carregadas no Google Colab
+  - arquivo de configuração do YOLO: yolov3.cfg
+  - weights do YOLO pré-treinados: yolov3.weights
+  - arquivo de texto contendo os nomes das classes: yolov3.txt
 
 ### Imagens Geradas:
 <p align="center">
@@ -26,3 +30,11 @@ Projeto de identificador de objetos utilizando YOLO com OpenCV.
 | -------- | -------- | -------- |
 |Jonata Bertoloni de Vasconcelos|jonata.vasconcelos@fatec.sp.gov.br|0791711024|
 |Lucas Oliveira de Souza|lucas.souza135@fatec.sp.gov.br|0791721002
+
+### Referências:
+- Arun Ponnusamy 
+  - [Blog: YOLO Object Detection with OpenCV and Python](https://www.arunponnusamy.com/yolo-object-detection-opencv-python.html)
+  - [Repositório GitHub: object-detection-opencv](https://github.com/arunponnusamy/object-detection-opencv)
+- Darknet:
+  - [Blog: YOLO: Real-Time Object Detection](https://pjreddie.com/darknet/yolo/)
+  - [Download yolov3.weights](https://pjreddie.com/media/files/yolov3.weights)
